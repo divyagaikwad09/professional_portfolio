@@ -27,8 +27,7 @@ function Projects() {
       "Modern E-Commerce application featuring product listing, category filtering, search functionality, shopping cart management, and responsive design.",
     github:
       "https://github.com/divyagaikwad09/Ecommerce_app_Final_Project",
-    live: "#",
-  },
+live: "https://ecommerce-divya.netlify.app",  },
   
   
 ];
