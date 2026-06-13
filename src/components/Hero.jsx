@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import {
   FaGithub,
   FaLinkedin,
+  FaYoutube,
   FaDownload,
   FaEnvelope,
 } from "react-icons/fa";
@@ -24,24 +25,25 @@ function Hero() {
           className="flex justify-center"
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-indigo-500/20 blur-3xl rounded-full"></div>
+
+            <div className="absolute inset-0 bg-indigo-500/30 blur-3xl rounded-full"></div>
 
             <img
               src="/profile.jpg"
               alt="Divya Gaikwad"
               className="
                 relative
-                w-72
-                h-72
-                md:w-80
-                md:h-80
-                lg:w-96
-                lg:h-96
+                w-80
+                h-80
+                md:w-[420px]
+                md:h-[420px]
+                lg:w-[500px]
+                lg:h-[500px]
                 object-cover
                 rounded-full
                 border-4
                 border-indigo-500
-                shadow-[0_0_50px_rgba(99,102,241,0.4)]
+                shadow-[0_0_60px_rgba(99,102,241,0.5)]
                 hover:scale-105
                 transition-all
                 duration-500
@@ -56,9 +58,9 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          {/* Badge */}
-          <div className="inline-block px-4 py-2 mb-6 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium">
-            🚀 Available for Opportunities
+          {/* Availability Badge */}
+          <div className="inline-block px-4 py-2 mb-6 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-sm font-medium">
+            🚀 Available for Full Stack Developer Opportunities
           </div>
 
           <p className="text-indigo-400 mb-3 text-lg">
@@ -67,9 +69,12 @@ function Hero() {
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
             Divya
-            <span className="gradient-text"> Gaikwad</span>
+            <span className="gradient-text">
+              {" "}Gaikwad
+            </span>
           </h1>
 
+          {/* Typing Animation */}
           <div className="text-2xl md:text-3xl font-semibold mt-6 h-20">
             <TypeAnimation
               sequence={[
@@ -89,9 +94,9 @@ function Hero() {
           <p className="text-gray-400 mt-6 leading-8 text-lg">
             Passionate Software Engineer with 2+ years of professional
             experience at Tata Consultancy Services. Skilled in Java,
-            Spring Boot, React.js, REST APIs, SQL Optimization and
-            Enterprise ERP Systems. Focused on building scalable,
-            high-performance applications.
+            Spring Boot, React.js, REST APIs, SQL, MySQL and Enterprise
+            ERP Systems. Focused on building scalable, high-performance
+            applications and delivering business solutions.
           </p>
 
           {/* Buttons */}
@@ -114,6 +119,16 @@ function Hero() {
               Contact Me
             </a>
 
+            {/* <a
+              href="https://www.youtube.com/@DivyaTechVerse"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-600 hover:bg-red-700 transition px-7 py-4 rounded-xl flex items-center gap-3 font-semibold"
+            >
+              <FaYoutube />
+              YouTube Channel
+            </a> */}
+
           </div>
 
           {/* Social Links */}
@@ -123,7 +138,7 @@ function Hero() {
               href="https://github.com/divyagaikwad09"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-indigo-400 transition"
+              className="hover:text-indigo-400 hover:scale-110 transition-all"
             >
               <FaGithub />
             </a>
@@ -132,9 +147,18 @@ function Hero() {
               href="https://www.linkedin.com/in/divya-gaikwad-a3b948237/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-indigo-400 transition"
+              className="hover:text-indigo-400 hover:scale-110 transition-all"
             >
               <FaLinkedin />
+            </a>
+
+            <a
+              href="https://www.youtube.com/@DivyaTechVerse"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red-500 hover:scale-110 transition-all"
+            >
+              <FaYoutube />
             </a>
 
           </div>
@@ -172,6 +196,7 @@ function Hero() {
           </div>
 
         </motion.div>
+
       </div>
     </section>
   );
