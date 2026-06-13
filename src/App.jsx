@@ -42,3 +42,8 @@ function App() {
 }
 
 export default App;
+
+
+// git add .
+// git commit -m "Updated portfolio UI"
+// git push origin
