@@ -29,21 +29,7 @@ function Projects() {
       "https://github.com/divyagaikwad09/Ecommerce_app_Final_Project",
     live: "#",
   },
-  {
-    title: "E-Commerce Store",
-    image: "/ecommerce-project.png",
-    tech: [
-      "React.js",
-      "JavaScript",
-      "CSS3",
-      "Local Storage",
-    ],
-    desc:
-      "Modern E-Commerce application featuring product listing, category filtering, search functionality, shopping cart management, and responsive design.",
-    github:
-      "https://github.com/divyagaikwad09/Ecommerce_app_Final_Project",
-    live: "#",
-  },
+  
   
 ];
   return (
