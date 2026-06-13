@@ -59,9 +59,9 @@ function Hero() {
           transition={{ duration: 1 }}
         >
           {/* Availability Badge */}
-          <div className="inline-block px-4 py-2 mb-6 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-sm font-medium">
+          {/* <div className="inline-block px-4 py-2 mb-6 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-sm font-medium">
             🚀 Available for Full Stack Developer Opportunities
-          </div>
+          </div> */}
 
           <p className="text-indigo-400 mb-3 text-lg">
             Hello, I'm
